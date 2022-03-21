@@ -1,0 +1,25 @@
+
+<suite name="Suite">
+	
+	<test name="Test1">
+		<classes>
+		 <parameter name="browser" value="chrome"/>
+			<class name="com.actitime.testsrcipt.CustomerModule" />
+			<methods>
+			<include name="testCreateCustomer" />
+			<include name="testModifyCustomer" />
+			</methods>
+		</classes>
+	</test>
+	
+	<test name="Test2">
+	 <parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="com.actitime.testsrcipt.CustomerModule" />
+			<methods>
+			<include name="testCreateCustomer" />
+			<include name="testModifyCustomer" />
+			</methods>
+		</classes>
+	</test>
+</suite> 
